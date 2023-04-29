@@ -53,6 +53,56 @@ int main()
     }
 
     //Punto f
+    char opcion;
+
+    while (true) {
+        // Solicitar los coeficientes del polinomio
+        std::cout << "Ingrese el primer coeficiente: \n";
+        std::cin >> a;
+
+        std::cout << "Ingrese el segundo coeficiente: \n";
+        std::cin >> b;
+
+        std::cout << "Ingrese el tercer coeficiente: \n";
+        std::cin >> c;
+
+        // Solicitar la opción deseada
+        std::cout << "Seleccione una opción: \n";
+        std::cout << "'a' - Cantidad de raíces\n";
+        std::cout << "'b' - Valor de raíces\n";
+        std::cout << "'c' - Valor del polinomio en x\n";
+        std::cout << "'d' - Valor del polinomio en y\n";
+        std::cout << "Ingrese '0' para salir\n";
+        std::cin >> opcion;
+
+        // Verificar la opción seleccionada
+        switch (opcion) {
+        case 'a':
+            // Calcular la cantidad de raíces del polinomio
+            // ...
+            break;
+        case 'b':
+            // Calcular el valor de las raíces del polinomio
+            // ...
+            break;
+        case 'c':
+            // Calcular el valor del polinomio en un punto x
+            // ...
+            break;
+        case 'd':
+            // Calcular el valor del polinomio en un punto y
+            // ...
+            break;
+        case '0':
+            // Salir del loop
+            std::cout << "Saliendo del programa...";
+            return 0;
+        default:
+            // Opción no válida
+            std::cout << "Opción no válida. Por favor, seleccione una opción válida.";
+            break;
+        }
+    }
 
     delete[] raices;
     return 0;
