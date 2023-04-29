@@ -93,12 +93,31 @@ float value_depend(int a, int b, int c, int x)
 			float value_independ(int a, int b, int c, int y);
 			*/
 
-			/*
-			1-f) Hacer un programa con menu que pida ingresar por teclado los 3 coeficientes del polinomio y lo que quiere calcular
-					'a' - Cantidad de racies
-					'b' - Valor de racies (cuales sean)
-					'c' - Valor del polinomio en x
-					'd' - Valor del polinomio en y
-				# El programa debe estar dentro de un loop infinito que se cortara solo si el usuario ingresa '0' o una opcion no
-				  valida e informara porque se cerro.
-			*/
+double* value_independ(int a, int b, int c, int y)
+{
+	c = c - y;
+	double discriminante = b * b - 4 * a * c;
+	double* raices = new double[2];
+
+	if (discriminante > 0) {
+		raices[0] = (-b + sqrt(discriminante)) / (2 * a);
+		raices[1] = (-b - sqrt(discriminante)) / (2 * a);
+	}
+
+	else {
+		raices[0] = NAN;
+		raices[1] = NAN;
+	}
+
+	return raices;
+}
+
+/*
+1-f) Hacer un programa con menu que pida ingresar por teclado los 3 coeficientes del polinomio y lo que quiere calcular
+		'a' - Cantidad de racies
+		'b' - Valor de racies (cuales sean)
+		'c' - Valor del polinomio en x
+		'd' - Valor del polinomio en y
+	# El programa debe estar dentro de un loop infinito que se cortara solo si el usuario ingresa '0' o una opcion no
+	  valida e informara porque se cerro.
+*/

@@ -40,6 +40,19 @@ int main()
     std::cout << "El resultado del polinomio para x = 3 es: \n" << resultado;
 
     //Punto e
+    double* raices = value_independ(a, b, c, 2);
+
+    if (isnan(raices[0]) || isnan(raices[1])) {
+        std::cout << "No existen raices reales\n";
+    }
+    else if (raices[0] == raices[1]) {
+        std::cout << "La raiz es: \n" << raices[0];
+    }
+    else {
+        std::cout << "Las raices son: \n" << raices[0] << " y " << raices[1];
+    }
+
+    //Punto f
 
     delete[] raices;
     return 0;
