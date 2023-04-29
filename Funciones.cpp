@@ -81,19 +81,24 @@ double* imaginary_value_roots(int a, int b, int c)
 	 de la variable dependiente (y) y la devuelva como parametro
 			float value_depend(int a, int b, int c, int x);
 			*/
+float value_depend(int a, int b, int c, int x)
+{
+	float resultado = x * x * a + x * b + c;
+	return resultado;
+}
+
+/*
+1-e) Realizar una funcion que dado un polinomio de grado 2  y el valor de una variable dependiente(y) calcule el valor
+	 de la variable independiente (x) y la devuelva como parametro
+			float value_independ(int a, int b, int c, int y);
+			*/
 
 			/*
-			1-e) Realizar una funcion que dado un polinomio de grado 2  y el valor de una variable dependiente(y) calcule el valor
-				 de la variable independiente (x) y la devuelva como parametro
-						float value_independ(int a, int b, int c, int y);
-						*/
-
-						/*
-						1-f) Hacer un programa con menu que pida ingresar por teclado los 3 coeficientes del polinomio y lo que quiere calcular
-								'a' - Cantidad de racies
-								'b' - Valor de racies (cuales sean)
-								'c' - Valor del polinomio en x
-								'd' - Valor del polinomio en y
-							# El programa debe estar dentro de un loop infinito que se cortara solo si el usuario ingresa '0' o una opcion no
-							  valida e informara porque se cerro.
-						*/
+			1-f) Hacer un programa con menu que pida ingresar por teclado los 3 coeficientes del polinomio y lo que quiere calcular
+					'a' - Cantidad de racies
+					'b' - Valor de racies (cuales sean)
+					'c' - Valor del polinomio en x
+					'd' - Valor del polinomio en y
+				# El programa debe estar dentro de un loop infinito que se cortara solo si el usuario ingresa '0' o una opcion no
+				  valida e informara porque se cerro.
+			*/

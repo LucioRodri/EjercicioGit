@@ -35,6 +35,11 @@ int main()
         std::cout << "La parte imaginaria de la raiz es: \n" << raices[1];
     }
 
+    //Punto d
+    float resultado = value_depend(a, b, c, 3);
+    std::cout << "El resultado del polinomio para x = 3 es: \n" << resultado;
+
+    //Punto e
 
     delete[] raices;
     return 0;
