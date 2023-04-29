@@ -24,8 +24,18 @@ int main()
     else {
         std::cout << "Las raices son: \n" << raices[0] << " y " << raices[1];
     }
+    //Punto c
+    double* raices = imaginary_value_roots(a, b, c);
+
+    if (isnan(raices[0]) || isnan(raices[1])) {
+        std::cout << "No existen raices imaginaria\n";
+    }
+    else {
+        std::cout << "La parte real de la raiz es: \n" << raices[0];
+        std::cout << "La parte imaginaria de la raiz es: \n" << raices[1];
+    }
+
 
     delete[] raices;
-
     return 0;
 }
