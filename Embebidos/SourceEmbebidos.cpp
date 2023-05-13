@@ -23,7 +23,7 @@ int main() {
 
     // Imprimo valores pedidos
     std::cout << "Veces que se llamo la funcion: " << contador << std::endl;
-    std::cout << "Dirección de memoria de contador_global: " << &contador << std::endl;
+    std::cout << "DirecciÃ³n de memoria de contador_global: " << &contador << std::endl;
 
     return 0;
 }
