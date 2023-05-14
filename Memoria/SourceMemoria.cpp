@@ -9,10 +9,10 @@ int main() {
 
     //Punto 2
     int32_t var = 42;
-    std::cout << "Dirección de edata: " << &edata << std::endl;
-    std::cout << "Dirección de var: " << &var << std::endl;
+    std::cout << "DirecciÃ³n de edata: " << &edata << std::endl;
+    std::cout << "DirecciÃ³n de var: " << &var << std::endl;
     static int32_t varGlobal = 23;
-    std::cout << "Dirección de varGlobal: " << &varGlobal << std::endl;
+    std::cout << "DirecciÃ³n de varGlobal: " << &varGlobal << std::endl;
 
     //Punto 3
     std::cout << "El valor de end es: " << &end << std::endl;
