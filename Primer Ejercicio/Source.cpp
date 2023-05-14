@@ -66,23 +66,23 @@ int main()
         std::cout << "Ingrese el tercer coeficiente: \n";
         std::cin >> c;
 
-        // Solicitar la opción deseada
-        std::cout << "Seleccione una opción: \n";
-        std::cout << "'a' - Cantidad de raíces\n";
-        std::cout << "'b' - Valor de raíces\n";
+        // Solicitar la opciÃ³n deseada
+        std::cout << "Seleccione una opciÃ³n: \n";
+        std::cout << "'a' - Cantidad de raÃ­ces\n";
+        std::cout << "'b' - Valor de raÃ­ces\n";
         std::cout << "'c' - Valor del polinomio en x\n";
         std::cout << "'d' - Valor del polinomio en y\n";
         std::cout << "Ingrese '0' para salir\n";
         std::cin >> opcion;
 
-        // Verificar la opción seleccionada
+        // Verificar la opciÃ³n seleccionada
         switch (opcion) {
         case 'a':
-            // Calcular la cantidad de raíces del polinomio
+            // Calcular la cantidad de raÃ­ces del polinomio
             // ...
             break;
         case 'b':
-            // Calcular el valor de las raíces del polinomio
+            // Calcular el valor de las raÃ­ces del polinomio
             // ...
             break;
         case 'c':
@@ -98,8 +98,8 @@ int main()
             std::cout << "Saliendo del programa...";
             return 0;
         default:
-            // Opción no válida
-            std::cout << "Opción no válida. Por favor, seleccione una opción válida.";
+            // OpciÃ³n no vÃ¡lida
+            std::cout << "OpciÃ³n no vÃ¡lida. Por favor, seleccione una opciÃ³n vÃ¡lida.";
             break;
         }
     }
