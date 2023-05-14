@@ -1,0 +1,21 @@
+Punto 1:
+Etext representa el final del segmento de texto del programa.
+Comparado a la direccion de etext con las direcciones de Suma y main, la dirección de Suma está en un rango posterior al del segmento de texto,
+mientras que la dirección de main está en un rango anterior.
+
+Punto 2:
+Edata marca el final del área de memoria reservada para los datos que son inicializados en tiempo de compilación.
+Un puntero a una función y edata no se encuentran en el mismo segmento de memoria.
+
+Punto 3: 
+El puntero end apunta a la dirección de memoria inmediatamente después del final del segmento de datos y del heap.
+Al comparar con las direcciones de memoria de las variables locales y globales del punto anterior, podemos observar que estas se encuentran por debajo del valor de end
+y la dirección de varGlobal se encuentra dentro del espacio asignado al programa y por lo tanto, por encima del valor de end.
+
+Punto 4:
+1. Segmento de código: comienza en la dirección de memoria text_start y termina en la dirección etext.
+2. Segmento de datos inicializados: comienza en la dirección de memoria data_start y termina en la dirección edata.
+3. Segmento de datos no inicializados: comienza en la dirección de memoria bss_start y termina en la dirección end.
+4. Heap: crece hacia arriba desde la dirección brk_start hasta la dirección actual del final del heap (que puede variar durante la ejecución del programa).
+5. Stack: crece hacia abajo desde la dirección start_stack hasta la dirección actual del final del stack (que también puede variar durante la ejecución del programa).
+
