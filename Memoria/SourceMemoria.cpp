@@ -1,6 +1,10 @@
 #include "HeaderMemoria.h"
 extern "C" void* edata;
 
+int edata;
+char etext;
+char end;
+
 int main() {
     // Punto 1
     std::cout << "Suma: " << (void*)(&Suma) << std::endl;
