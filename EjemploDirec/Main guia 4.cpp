@@ -16,7 +16,7 @@ volatile uint32_t* FIODIR_2 = (volatile uint32_t*)0x2009c040UL;	// - configurar 
 volatile uint32_t* FIOPIN_0 = (volatile uint32_t*)0x2009C014UL;	// - configurar el estado del pin o leer el estado del pin
 volatile uint32_t* FIOPIN_2 = (volatile uint32_t*)0x2009C054UL;	//
 
-//Inicialización de perifericos
+//InicializaciÃ³n de perifericos
 void Inicializar_KIT(void)
 {
 	//LED
