@@ -62,6 +62,8 @@ void mde_antirrebotes(void)
 	case SUELTO:
 		if (ConsultarBit(FIOPIN_2, 10) == 0)
 			estados = MANTENIDO;
+		else if (ConsultarBit(FIOPIN_2, 10) == 1)
+			estados = PRESIONADO;
 		break;
 
 	default:
